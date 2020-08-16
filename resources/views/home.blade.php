@@ -145,10 +145,10 @@
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-5 form-group text-right">
-                                        <label for="time">Time</label>
+                                        <label for="nome_time">Time</label>
                                     </div>  
                                     <div class="col-md-6 form-group">
-                                        <select class="form-control" name="time" style="width:auto">
+                                        <select class="form-control" name="nome_time" style="width:auto">
                                             @foreach($times as $time)            
                                                 <option value="{{$time->id}}">{{$time->nome_time}}</option>
                                             @endforeach
