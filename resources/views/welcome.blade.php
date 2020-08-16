@@ -156,14 +156,14 @@
 
                 <div class="p-4">
                     <div class="row align-items-center">
-                        <div class="col-sm-12 campeao pb-3">
+                        <div class="col-12 campeao pb-3">
                             <h2 class="campeao">Campeão</h2>
                         </div>
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-2">
+                        <div class="col-2"></div>
+                        <div class="col-2">
                             <img src="{{URL::asset('/images/campeao.png')}}" width="300" /> 
                         </div>
-                        <div class="h4 col-sm-8 pl-4 pr-5">
+                        <div class="h4 col-8 pl-4 pr-5">
                             O atual campeão da liga
                         </div>
                     </div>
@@ -172,46 +172,48 @@
                 <div class="p-3">
                     <h2 class="elite pb-3">Elite dos 4</h2>
                     <div class="row align-items-center pb-3">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-2">
+                        <div class="col-1"></div>
+                        <div class="col-12 col-sm-2">
                             <img src="{{URL::asset('/images/avatar1.png')}}" width="180" /> 
                         </div>
-                        <div class="h4 col-sm-9 pl-4 pr-5">
+                        <div class="col-1  d-block d-md-none"></div>
+                        <div class="h4 col-12 col-sm-8 pl-4 pr-5">
                             Lider 1, especialista em determinados pokemons. Frase de efeito 1.
                         </div>
                     </div>
                     <div class="row align-items-center pb-3">
                         <?php $lider2="Lider 2, especialista em determinados pokemons. Frase de efeito 2."?>
-                        <div class="col-sm-1"></div>
-                        <div class="h4 col-sm-8  d-none d-sm-block">
+                        <div class="col-1  d-sm-none d-md-block"></div>
+                        <div class="h4 col-12 col-sm-8  d-none d-sm-block">
                             {{$lider2}}
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-12 col-sm-2">
                             <img src="{{URL::asset('/images/avatar2.png')}}" width="180" /> 
                         </div>
-                        <div class="h4 col-sm-9 pl-4 pr-5  d-block d-sm-none">
+                        <div class="h4 col-12 col-sm-9 pl-4 pr-5  d-block d-sm-none">
                             {{$lider2}}
                         </div>
                     </div>
                     <div class="row align-items-center pb-3">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-2">
+                        <div class="col-1"></div>
+                        <div class="col-12 col-sm-2">
                             <img src="{{URL::asset('/images/avatar3.png')}}" width="180" /> 
                         </div>
-                        <div class="h4 col-sm-9 pl-4 pr-5">
+                        <div class="col-1  d-block d-md-none"></div>
+                        <div class="h4 col-12 col-sm-8 pl-4 pr-5">
                             Lider 3, especialista em determinados pokemons. Frase de efeito 3.
                         </div>
                     </div>
                     <div class="row align-items-center">
                         <?php $lider4="Lider 4, especialista em determinados pokemons. Frase de efeito 4."?>
-                        <div class="col-sm-1"></div>
-                        <div class="h4 col-sm-8  d-none d-sm-block">
+                        <div class="col-1  d-sm-none d-md-block"></div>
+                        <div class="h4 col-12 col-sm-8  d-none d-sm-block">
                             {{$lider4}}
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-12 col-sm-2">
                             <img src="{{URL::asset('/images/avatar4.png')}}" width="180" /> 
                         </div>
-                        <div class="h4 col-sm-9 pl-4 pr-5  d-block d-sm-none">
+                        <div class="h4 col-12 col-sm-9 pl-4 pr-5  d-block d-sm-none">
                             {{$lider4}}
                         </div>
                     </div>
