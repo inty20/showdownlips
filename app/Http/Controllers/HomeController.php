@@ -58,7 +58,7 @@ class HomeController extends Controller
             ->insert([
                 'users_id' => Auth::id(),
                 'tier' => $request->tier,
-                'nome_tier' => $request->nome_tier,
+                'nome_time' => $request->nome_time,
                 'pokemon_1' => $request->pokemon_1,
                 'pokemon_2' => $request->pokemon_2,
                 'pokemon_3' => $request->pokemon_3,

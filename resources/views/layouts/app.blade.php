@@ -50,7 +50,7 @@
         .content {
             text-align: center;
             background-color: rgba(255,255,255,.85);
-            width: 85%;
+            width: 90%;
         }
 
         hr:last-child{
