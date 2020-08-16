@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
 
-        <div class="col-md-12">
+        <div class="col-12">
             <div class="card">
                 <div class="card-header">
                     <ul class="nav nav-tabs" role="tablist">
@@ -31,31 +31,31 @@
                             <form method="POST" action="/perfil" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row">
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="name">Nome</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input name="name" value="{{$user->name}}" class="form-control" />
                                     </div>  
                                     
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="email">Email</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input name="email" value="{{$user->email}}" class="form-control" />
                                     </div>  
                                     
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="password">Senha</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input type="password" name="password" class="form-control" />
                                     </div>  
                                     
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="photo">Foto de Perfil</label>
                                     </div>  
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-6 col-7 form-group">
                                         <input type="file" name="photo" />
                                     </div>  
             
@@ -74,17 +74,17 @@
                             <form method="POST" action="/desafiar">
                                 @csrf
                                 <div class="row">
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="nome_time">Nome do time</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input name="nome_time" class="form-control" />
                                     </div>  
             
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="tier">Selecione a Tier</label>
                                     </div>  
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-6 col-7 form-group">
                                         <select class="form-control" name="tier" style="width:auto">
                                             @foreach(Config::get('constants.tier') as $key => $value)            
                                                 <option value="{{$key}}">{{$value}}</option>
@@ -92,40 +92,40 @@
                                         </select>
                                     </div>  
 
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="pokemon_1">1º Pokemon</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input name="pokemon_1" onfocusout="verificarPokemon(this)" class="form-control" />
                                     </div> 
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="pokemon_2">2º Pokemon</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input name="pokemon_2" onfocusout="verificarPokemon(this)" class="form-control" />
                                     </div> 
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="pokemon_3">3º Pokemon</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input name="pokemon_3" onfocusout="verificarPokemon(this)" class="form-control" />
                                     </div> 
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="pokemon_4">4º Pokemon</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input name="pokemon_4" onfocusout="verificarPokemon(this)" class="form-control" />
                                     </div> 
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="pokemon_5">5º Pokemon</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input name="pokemon_5" onfocusout="verificarPokemon(this)" class="form-control" />
                                     </div> 
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="pokemon_6">6º Pokemon</label>
                                     </div>  
-                                    <div class="col-md-3 form-group">
+                                    <div class="col-md-3 col-7 form-group">
                                         <input name="pokemon_6" onfocusout="verificarPokemon(this)" class="form-control" />
                                     </div> 
             
@@ -144,10 +144,10 @@
                             <form method="POST" action="/resultados" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row">
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="nome_time">Time</label>
                                     </div>  
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-6 col-7 form-group">
                                         <select class="form-control" name="nome_time" style="width:auto">
                                             @foreach($times as $time)            
                                                 <option value="{{$time->id}}">{{$time->nome_time}}</option>
@@ -155,34 +155,34 @@
                                         </select>
                                     </div>  
                                     
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="elite1">1º Elite</label>
                                     </div>  
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-6 col-7 form-group">
                                         <input type="file" id="elite1" name="elite1"><br/>
                                     </div>
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="elite2">2º Elite</label>
                                     </div>  
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-6 col-7 form-group">
                                         <input type="file" id="elite2" name="elite2"><br/>
                                     </div>
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="elite3">3º Elite</label>
                                     </div>  
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-6 col-7 form-group">
                                         <input type="file" id="elite3" name="elite3"><br/>
                                     </div>
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="elite4">4º Elite</label>
                                     </div>  
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-6 col-7 form-group">
                                         <input type="file" id="elite4" name="elite4"><br/>
                                     </div>
-                                    <div class="col-md-5 form-group text-right">
+                                    <div class="col-5 form-group text-right">
                                         <label for="elite5">5º Elite</label>
                                     </div>  
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-6 col-7 form-group">
                                         <input type="file" id="elite5" name="elite5"><br/>
                                     </div>
             
